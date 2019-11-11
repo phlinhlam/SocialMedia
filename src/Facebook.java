@@ -1,5 +1,5 @@
 public class Facebook extends User {
-
+    Facebook(){}
     public void logIn()
     {
         System.out.println("You've logged into Facebook");
@@ -8,13 +8,13 @@ public class Facebook extends User {
 public String displayFacbook()
 {
     String str = " ";
-    System.out.println("You have 15 new notifications");
+    System.out.println("Your user name is: " + userEmail + "\nYou have 15 new notifications");
     return str;
 }
 
     public void logOut()
     {
-        System.out.println("You've logged out of Facebook");
+        System.out.println("Do you want to log out?");
     }
 
 

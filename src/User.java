@@ -29,6 +29,10 @@ public class User {
         this.password = password;
     }
 
+    public void logOut()
+    {
+        System.out.println("You are successfully logged out");
+    }
 
 
 

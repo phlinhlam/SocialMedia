@@ -6,6 +6,7 @@ public class SocialMedia {
         User user = new User();
         User user2 = new User();
         User user3 = new User();
+
         ArrayList<User> userDB = new ArrayList<>();//database
         System.out.println("Log in information");
         user.setUserEmail("myemail");
@@ -51,19 +52,16 @@ public class SocialMedia {
                             Facebook f = new Facebook();
                             f.logIn();
                             f.displayFacbook();
-                            f.logOut();
                             break;
                         case 2:
                             Twitter t = new Twitter();
                             t.logIn();
                             t.displayTwitter();
-                            t.logOut();
                             break;
                         case 3:
                             Instagram i = new Instagram();
                             i.logIn();
                             i.displayInsta();
-                            i.logOut();
                             break;
                     }//end switch
                     System.out.println("Do you want to continue? (Yes/No)");
@@ -71,7 +69,8 @@ public class SocialMedia {
                     System.out.println("");
 
                 } while (yesNo.equalsIgnoreCase("yes"));
-                System.out.println("Exit");
+                u.logOut();
+                System.out.println("Goodbye");
             }//end else-if
         }//end for
     }//end main
