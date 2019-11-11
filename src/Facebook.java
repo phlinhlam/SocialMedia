@@ -4,13 +4,13 @@ public class Facebook extends User {
     {
         //if(userEmail.contains())
         System.out.println("You've logged into Facebook");
-        System.out.println("Thank you for visiting Facebook.");
-
     }
+
     public void logOut()
     {
         System.out.println("You've logged out of Facebook");
     }
+
 
 
 }
