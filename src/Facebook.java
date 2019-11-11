@@ -6,6 +6,7 @@ public class Facebook extends User {
         System.out.println("You've logged into Facebook");
     }
 
+
     public void logOut()
     {
         System.out.println("You've logged out of Facebook");

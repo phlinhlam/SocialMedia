@@ -4,15 +4,20 @@ import java.util.Scanner;
 public class SocialMedia {
     public static void main(String[] args) {
         User user = new User();
+        User user2 = new User();
 
-        ArrayList<User> userInfo = new ArrayList<>();//database
+        ArrayList<User> userDB = new ArrayList<>();//database
         System.out.println("Log in information");
         user.setUserEmail("myemail");
         user.setPassword("mypassword");
-        userInfo.add(user);
+        userDB.add(user);
+
+        user2.setUserEmail("user2email");
+        user2.setPassword("user2pass");
+        userDB.add(user2);
 
         //check for userInfo arraylist
-        for(User u : userInfo)
+        for(User u : userDB)
         {
             System.out.println(u.getUserEmail());
             System.out.println(u.getPassword());
