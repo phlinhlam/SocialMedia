@@ -8,4 +8,11 @@ public class Twitter extends User {
     {
         System.out.println("You've logged out of Twitter");
     }
+
+    public String displayTwitter()
+    {
+        String str = " ";
+        System.out.println("Someone just direct messaged you on Twitter");
+        return str;
+    }
 }

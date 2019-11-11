@@ -34,7 +34,6 @@ public class SocialMedia {
         String p = kb.nextLine();
         String yesNo = "yes";
         //check
-       // if(user.getUserEmail().equalsIgnoreCase(e) && user.getPassword().equalsIgnoreCase(p)) {
         for(User u : userDB) {
             if(!u.getUserEmail().equalsIgnoreCase(e) && u.getPassword().equalsIgnoreCase(p))
             {
@@ -51,16 +50,19 @@ public class SocialMedia {
                         case 1:
                             Facebook f = new Facebook();
                             f.logIn();
+                            f.displayFacbook();
                             f.logOut();
                             break;
                         case 2:
                             Twitter t = new Twitter();
                             t.logIn();
+                            t.displayTwitter();
                             t.logOut();
                             break;
                         case 3:
                             Instagram i = new Instagram();
                             i.logIn();
+                            i.displayInsta();
                             i.logOut();
                             break;
                     }//end switch

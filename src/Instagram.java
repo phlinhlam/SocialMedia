@@ -4,6 +4,12 @@ public class Instagram extends User{
 
         System.out.println("You've logged into Instagram");
     }
+    public String displayInsta()
+    {
+        String str = " ";
+        System.out.println("Follow abc and others you know to see their photos and videos");
+        return str;
+    }
     public void logOut()
     {
 
