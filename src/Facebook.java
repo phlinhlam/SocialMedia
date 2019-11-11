@@ -1,14 +1,20 @@
 public class Facebook extends User {
-    Facebook(){}
+    public Facebook() {
+    }
+
+    public Facebook(String userEmail, String password) {
+        super(userEmail, password);
+    }
+
     public void logIn()
     {
         System.out.println("You've logged into Facebook");
     }
 
-public String displayFacbook()
+    public String displayFacebook()
 {
     String str = " ";
-    System.out.println("Your user name is: " + userEmail + "\nYou have 15 new notifications");
+    System.out.println("You have 15 new notifications");
     return str;
 }
 

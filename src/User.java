@@ -34,6 +34,13 @@ public class User {
         System.out.println("You are successfully logged out");
     }
 
+    public String display()
+    {
+        String str = " ";
+        System.out.println("Your user name is: " + userEmail);
+        System.out.println("Your password is: " +password);
+        return str;
+    }
 
 
 

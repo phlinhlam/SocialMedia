@@ -8,6 +8,7 @@ public class SocialMedia {
         User user3 = new User();
 
         ArrayList<User> userDB = new ArrayList<>();//database
+
         System.out.println("Log in information");
         user.setUserEmail("myemail");
         user.setPassword("mypassword");
@@ -34,6 +35,7 @@ public class SocialMedia {
         System.out.println("Enter password: ");
         String p = kb.nextLine();
         String yesNo = "yes";
+
         //check
         for(User u : userDB) {
             if(!u.getUserEmail().equalsIgnoreCase(e) && u.getPassword().equalsIgnoreCase(p))
@@ -42,7 +44,8 @@ public class SocialMedia {
             }
             else if(u.getUserEmail().equalsIgnoreCase(e) && u.getPassword().equalsIgnoreCase(p)) {
                 do {
-                    System.out.println("Where do you want to log into?");
+
+                    System.out.println("Hi " +u.getUserEmail()+". Where do you want to log into?");
                     System.out.println("Type 1 for Facebook");
                     System.out.println("Type 2 for Twitter");
                     System.out.println("Type 3 for Instagram");
@@ -51,7 +54,7 @@ public class SocialMedia {
                         case 1:
                             Facebook f = new Facebook();
                             f.logIn();
-                            f.displayFacbook();
+                            f.displayFacebook();
                             break;
                         case 2:
                             Twitter t = new Twitter();
