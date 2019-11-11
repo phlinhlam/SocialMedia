@@ -44,7 +44,6 @@ public class SocialMedia {
             }
             else if(u.getUserEmail().equalsIgnoreCase(e) && u.getPassword().equalsIgnoreCase(p)) {
                 do {
-
                     System.out.println("Hi " +u.getUserEmail()+". Where do you want to log into?");
                     System.out.println("Type 1 for Facebook");
                     System.out.println("Type 2 for Twitter");
@@ -54,12 +53,14 @@ public class SocialMedia {
                         case 1:
                             Facebook f = new Facebook();
                             f.logIn();
+                            f.addPhoto();
                             f.displayFacebook();
                             break;
                         case 2:
                             Twitter t = new Twitter();
                             t.logIn();
                             t.displayTwitter();
+                            t.retweet();
                             break;
                         case 3:
                             Instagram i = new Instagram();
@@ -77,6 +78,7 @@ public class SocialMedia {
             }//end else-if
         }//end for
     }//end main
+
 }
 
 

@@ -4,6 +4,10 @@ public class Twitter extends User {
     {
         System.out.println("You've logged into Twitter");
     }
+    public void retweet()
+    {
+        System.out.println("Mickey Mouse retweeted your tweet");
+    }
     public void logOut()
     {
         System.out.println("You've logged out of Twitter");

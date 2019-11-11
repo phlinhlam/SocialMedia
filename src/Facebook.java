@@ -14,13 +14,18 @@ public class Facebook extends User {
     public String displayFacebook()
 {
     String str = " ";
+    System.out.println(" ");
     System.out.println("You have 15 new notifications");
+    System.out.println("\nMickey Mouse liked your photo");
     return str;
 }
-
+public void addPhoto()
+{
+    System.out.println("You have uploaded a new photo!!!!");
+}
     public void logOut()
     {
-        System.out.println("Do you want to log out?");
+        System.out.println("You have logged out of Facebook");
     }
 
 

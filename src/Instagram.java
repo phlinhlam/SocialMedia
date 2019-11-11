@@ -7,7 +7,7 @@ public class Instagram extends User{
     public String displayInsta()
     {
         String str = " ";
-        System.out.println("Follow abc and others you know to see their photos and videos");
+        System.out.println("Follow Mickey Mouse and others you know to see their photos and videos");
         return str;
     }
     public void logOut()
